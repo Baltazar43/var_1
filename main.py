@@ -9,18 +9,18 @@ def calculate_bmi():
    bmi = round(bmi, 1)
  
    if bmi < 18.5:
-       messagebox.showinfo('bmi-pythonguides', f'Ğ˜ĞœĞ¢ = {bmi} ÑĞ¾Ğ¾Ñ‚Ğ²ĞµÑ‚ÑÑ‚Ğ²ÑƒĞµÑ‚ Ğ½ĞµĞ´Ğ¾ÑÑ‚Ğ°Ñ‚Ğ¾Ñ‡Ğ½Ğ¾Ğ¼Ñƒ Ğ²ĞµÑÑƒ')
+       messagebox.showinfo('bmi-pythonguides', f'ÈÌÒ = {bmi} ñîîòâåòñòâóåò íåäîñòàòî÷íîìó âåñó')
    elif (bmi > 18.5) and (bmi < 24.9):
-       messagebox.showinfo('bmi-pythonguides', f'Ğ˜ĞœĞ¢ = {bmi} ÑĞ¾Ğ¾Ñ‚Ğ²ĞµÑ‚ÑÑ‚Ğ²ÑƒĞµÑ‚ Ğ½Ğ¾Ñ€Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğ¼Ñƒ Ğ²ĞµÑÑƒ')
+       messagebox.showinfo('bmi-pythonguides', f'ÈÌÒ = {bmi} ñîîòâåòñòâóåò íîğìàëüíîìó âåñó')
    elif (bmi > 24.9) and (bmi < 29.9):
-       messagebox.showinfo('bmi-pythonguides', f'Ğ˜ĞœĞ¢ = {bmi} ÑĞ¾Ğ¾Ñ‚Ğ²ĞµÑ‚ÑÑ‚Ğ²ÑƒĞµÑ‚ Ğ¸Ğ·Ğ±Ñ‹Ñ‚Ğ¾Ñ‡Ğ½Ğ¾Ğ¼Ñƒ Ğ²ĞµÑÑƒ')
+       messagebox.showinfo('bmi-pythonguides', f'ÈÌÒ = {bmi} ñîîòâåòñòâóåò èçáûòî÷íîìó âåñó')
    else:
-       messagebox.showinfo('bmi-pythonguides', f'Ğ˜ĞœĞ¢ = {bmi} ÑĞ¾Ğ¾Ñ‚Ğ²ĞµÑ‚ÑÑ‚Ğ²ÑƒĞµÑ‚ Ğ¾Ğ¶Ğ¸Ñ€ĞµĞ½Ğ¸Ñ')  
+       messagebox.showinfo('bmi-pythonguides', f'ÈÌÒ = {bmi} ñîîòâåòñòâóåò îæèğåíèş')  
  
 window = Tk()
-window.title('ĞšĞ°Ğ»ÑŒĞºÑƒĞ»ÑÑ‚Ğ¾Ñ€ Ğ¸Ğ½Ğ´ĞµĞºÑĞ° Ğ¼Ğ°ÑÑÑ‹ Ñ‚ĞµĞ»Ğ°')
+window.title('Êàëüêóëÿòîğ èíäåêñà ìàññû òåëà')
 window.geometry('400x300')
-window.resizable(True, True)
+window.resizable(True, False)
 window.configure(bg="#1E466A")
 
  
@@ -35,7 +35,7 @@ frame.pack(expand=True)
  
 height_lb = Label(
    frame,
-   text="Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑĞ²Ğ¾Ğ¹ Ñ€Ğ¾ÑÑ‚ (Ğ² ÑĞ¼) ",
+   text="Ââåäèòå ñâîé ğîñò (â ñì) ",
    font='Georgia 12',
    bg="#1E466A",
    fg="#ffffff"
@@ -44,7 +44,7 @@ height_lb.grid(row=3, column=1)
  
 weight_lb = Label(
     frame,
-    text="Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ÑĞ²Ğ¾Ğ¹ Ğ²ĞµÑ (Ğ² ĞºĞ³)  ",
+    text="Ââåäèòå ñâîé âåñ (â êã)  ",
     font='Georgia 12',
     bg="#1E466A",
     fg="white"
@@ -65,7 +65,7 @@ weight_tf.grid(row=4, column=2, pady=5)
  
 cal_btn = Button(
    frame,
-   text='Ğ Ğ°ÑÑÑ‡Ğ¸Ñ‚Ğ°Ñ‚ÑŒ',
+   text='Ğàññ÷èòàòü',
    command=calculate_bmi,
    font='GeorgiaBOLD 12',
    bg="#FEE0A5"
